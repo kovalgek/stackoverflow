@@ -14,7 +14,15 @@
 		72F2C7671C20A4C60002F475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F2C7651C20A4C60002F475 /* Main.storyboard */; };
 		72F2C7691C20A4C60002F475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F2C7681C20A4C60002F475 /* Assets.xcassets */; };
 		72F2C76C1C20A4C60002F475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F2C76A1C20A4C60002F475 /* LaunchScreen.storyboard */; };
-		72F2C7771C20A4C60002F475 /* StackOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7761C20A4C60002F475 /* StackOverflowTests.m */; };
+		72F2C7831C20AE0D0002F475 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7821C20AE0D0002F475 /* TopicTests.m */; };
+		72F2C7861C20AF2E0002F475 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7851C20AF2E0002F475 /* Topic.m */; };
+		72F2C7871C20AF2E0002F475 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7851C20AF2E0002F475 /* Topic.m */; };
+		72F2C7891C20B43F0002F475 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7881C20B43F0002F475 /* QuestionTests.m */; };
+		72F2C78C1C20B4C80002F475 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C78B1C20B4C80002F475 /* Question.m */; };
+		72F2C78D1C20B4C80002F475 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C78B1C20B4C80002F475 /* Question.m */; };
+		72F2C79B1C21FB3C0002F475 /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C79A1C21FB3C0002F475 /* PersonTests.m */; };
+		72F2C79E1C21FDC30002F475 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C79D1C21FDC30002F475 /* Person.m */; };
+		72F2C79F1C21FDC30002F475 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C79D1C21FDC30002F475 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +49,16 @@
 		72F2C76B1C20A4C60002F475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F2C76D1C20A4C60002F475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72F2C7721C20A4C60002F475 /* StackOverflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72F2C7761C20A4C60002F475 /* StackOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowTests.m; sourceTree = "<group>"; };
 		72F2C7781C20A4C60002F475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F2C7821C20AE0D0002F475 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
+		72F2C7841C20AF2E0002F475 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		72F2C7851C20AF2E0002F475 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		72F2C7881C20B43F0002F475 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		72F2C78A1C20B4C80002F475 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		72F2C78B1C20B4C80002F475 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		72F2C79A1C21FB3C0002F475 /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
+		72F2C79C1C21FDC30002F475 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		72F2C79D1C21FDC30002F475 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,7 @@
 		72F2C7581C20A4C60002F475 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				72F2C7811C20AD8B0002F475 /* DataModel */,
 				72F2C75C1C20A4C60002F475 /* AppDelegate.h */,
 				72F2C75D1C20A4C60002F475 /* AppDelegate.m */,
 				72F2C75F1C20A4C60002F475 /* MasterViewController.h */,
@@ -110,10 +127,25 @@
 		72F2C7751C20A4C60002F475 /* StackOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
-				72F2C7761C20A4C60002F475 /* StackOverflowTests.m */,
 				72F2C7781C20A4C60002F475 /* Info.plist */,
+				72F2C7821C20AE0D0002F475 /* TopicTests.m */,
+				72F2C7881C20B43F0002F475 /* QuestionTests.m */,
+				72F2C79A1C21FB3C0002F475 /* PersonTests.m */,
 			);
 			path = StackOverflowTests;
+			sourceTree = "<group>";
+		};
+		72F2C7811C20AD8B0002F475 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				72F2C7841C20AF2E0002F475 /* Topic.h */,
+				72F2C7851C20AF2E0002F475 /* Topic.m */,
+				72F2C78A1C20B4C80002F475 /* Question.h */,
+				72F2C78B1C20B4C80002F475 /* Question.m */,
+				72F2C79C1C21FDC30002F475 /* Person.h */,
+				72F2C79D1C21FDC30002F475 /* Person.m */,
+			);
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +250,10 @@
 			files = (
 				72F2C75E1C20A4C60002F475 /* AppDelegate.m in Sources */,
 				72F2C7611C20A4C60002F475 /* MasterViewController.m in Sources */,
+				72F2C79E1C21FDC30002F475 /* Person.m in Sources */,
 				72F2C75B1C20A4C60002F475 /* main.m in Sources */,
+				72F2C78C1C20B4C80002F475 /* Question.m in Sources */,
+				72F2C7861C20AF2E0002F475 /* Topic.m in Sources */,
 				72F2C7641C20A4C60002F475 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F2C7771C20A4C60002F475 /* StackOverflowTests.m in Sources */,
+				72F2C79F1C21FDC30002F475 /* Person.m in Sources */,
+				72F2C7831C20AE0D0002F475 /* TopicTests.m in Sources */,
+				72F2C78D1C20B4C80002F475 /* Question.m in Sources */,
+				72F2C7891C20B43F0002F475 /* QuestionTests.m in Sources */,
+				72F2C7871C20AF2E0002F475 /* Topic.m in Sources */,
+				72F2C79B1C21FB3C0002F475 /* PersonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +446,7 @@
 				72F2C77D1C20A4C60002F475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72F2C77E1C20A4C60002F475 /* Build configuration list for PBXNativeTarget "StackOverflowTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +455,7 @@
 				72F2C7801C20A4C60002F475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
