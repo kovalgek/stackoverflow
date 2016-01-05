@@ -23,6 +23,9 @@
 		72F2C79B1C21FB3C0002F475 /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C79A1C21FB3C0002F475 /* PersonTests.m */; };
 		72F2C79E1C21FDC30002F475 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C79D1C21FDC30002F475 /* Person.m */; };
 		72F2C79F1C21FDC30002F475 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C79D1C21FDC30002F475 /* Person.m */; };
+		72F2C7A11C22095F0002F475 /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7A01C22095F0002F475 /* AnswerTests.m */; };
+		72F2C7A41C220BDB0002F475 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7A31C220BDB0002F475 /* Answer.m */; };
+		72F2C7A51C220BDB0002F475 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F2C7A31C220BDB0002F475 /* Answer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		72F2C79A1C21FB3C0002F475 /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
 		72F2C79C1C21FDC30002F475 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		72F2C79D1C21FDC30002F475 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		72F2C7A01C22095F0002F475 /* AnswerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
+		72F2C7A21C220BDB0002F475 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		72F2C7A31C220BDB0002F475 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 				72F2C7821C20AE0D0002F475 /* TopicTests.m */,
 				72F2C7881C20B43F0002F475 /* QuestionTests.m */,
 				72F2C79A1C21FB3C0002F475 /* PersonTests.m */,
+				72F2C7A01C22095F0002F475 /* AnswerTests.m */,
 			);
 			path = StackOverflowTests;
 			sourceTree = "<group>";
@@ -144,6 +151,8 @@
 				72F2C78B1C20B4C80002F475 /* Question.m */,
 				72F2C79C1C21FDC30002F475 /* Person.h */,
 				72F2C79D1C21FDC30002F475 /* Person.m */,
+				72F2C7A21C220BDB0002F475 /* Answer.h */,
+				72F2C7A31C220BDB0002F475 /* Answer.m */,
 			);
 			name = DataModel;
 			sourceTree = "<group>";
@@ -251,6 +260,7 @@
 				72F2C75E1C20A4C60002F475 /* AppDelegate.m in Sources */,
 				72F2C7611C20A4C60002F475 /* MasterViewController.m in Sources */,
 				72F2C79E1C21FDC30002F475 /* Person.m in Sources */,
+				72F2C7A41C220BDB0002F475 /* Answer.m in Sources */,
 				72F2C75B1C20A4C60002F475 /* main.m in Sources */,
 				72F2C78C1C20B4C80002F475 /* Question.m in Sources */,
 				72F2C7861C20AF2E0002F475 /* Topic.m in Sources */,
@@ -262,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F2C7A11C22095F0002F475 /* AnswerTests.m in Sources */,
 				72F2C79F1C21FDC30002F475 /* Person.m in Sources */,
 				72F2C7831C20AE0D0002F475 /* TopicTests.m in Sources */,
+				72F2C7A51C220BDB0002F475 /* Answer.m in Sources */,
 				72F2C78D1C20B4C80002F475 /* Question.m in Sources */,
 				72F2C7891C20B43F0002F475 /* QuestionTests.m in Sources */,
 				72F2C7871C20AF2E0002F475 /* Topic.m in Sources */,
