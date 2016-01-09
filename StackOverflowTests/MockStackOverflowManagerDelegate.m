@@ -16,6 +16,11 @@
     self.fetchError = error;
 }
 
+- (void)fetchingQuestionBodyFailedWithError:(NSError *)error
+{
+    self.fetchError = error;
+}
+
 - (void)didReceiveQuestions:(NSArray *)questions
 {
     _receivedQuestions = questions;

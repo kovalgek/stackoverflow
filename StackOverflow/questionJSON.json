@@ -1,0 +1,32 @@
+{
+    "has_more" : true,
+    "quota_max" : 300,
+    "quota_remaining" : 294,
+    "items" : [
+    {
+        "answer_count" : 1,
+        "last_edit_date" : 1452102261,
+        "owner" : {
+            "user_type" : "registered",
+            "link" : "http://stackoverflow.com/users/5753387/k-smith",
+            "user_id" : 5753387,
+            "display_name" : "k. smith",
+            "reputation" : 1,
+            "profile_image" : "https://www.gravatar.com/avatar/a3aa7d8a2a3e2a9a54ee5a5f0a6cc8e4?s=128&d=identicon&r=PG&f=1"
+        },
+        "link" : "http://stackoverflow.com/questions/34638696/excel-trying-to-use-an-equation-to-call-value-from-different-column",
+        "tags" : [
+        "excel",
+        "excel-formula",
+        "equation"
+        ],
+        "title" : "Excel trying to use an equation to call value from different column",
+        "creation_date" : 1452100069,
+        "is_answered" : false,
+        "view_count" : 12,
+        "last_activity_date" : 1452102261,
+        "question_id" : 34638696,
+        "score" : 0,
+        "body" : "<p>I've been trying to use persistent keychain references.</p>"
+    }]
+}

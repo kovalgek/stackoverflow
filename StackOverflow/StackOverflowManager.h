@@ -11,11 +11,13 @@
 #import "StackOverflowCommunicator.h"
 #import "QuestionBuilder.h"
 
-@class Topic;
+@class Topic, Question;
 
 enum
 {
-    StackOverflowManagerErrorQuestionSearchCode
+    StackOverflowManagerErrorQuestionSearchCode,
+    StackOverflowManagerErrorQuestionBodyFetchCode,
+    StackOverflowManagerErrorAnswerFetchCode
 };
 
 @interface StackOverflowManager : NSObject
@@ -23,7 +25,11 @@ enum
 @property (weak,   nonatomic) id<StackOverflowManagerDelegate> delegate;
 @property (strong, nonatomic) StackOverflowCommunicator *communicator;
 @property (strong, nonatomic) QuestionBuilder *questionBuilder;
+@property (strong, nonatomic) Question *questionNeedingBody;
 - (void)fetchQuestionOnTopic:(Topic *)topic;
+- (void)fetchBodyForQuestion:(Question *)question;
 - (void)searchingForQuestionsFailedWithError:(NSError *)error;
+- (void)fetchingQuestionBodyFailedWithError:(NSError *)error;
 - (void)receivedQuestionsJSON:(NSString *)objectNotation;
+- (void)receivedQuestionBodyJSON:(NSString *)objectNotation;
 @end

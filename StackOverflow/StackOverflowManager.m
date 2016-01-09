@@ -8,6 +8,7 @@
 
 #import "StackOverflowManager.h"
 #import "Topic.h"
+#import "Question.h"
 
 NSString *StackOverflowManagerError             = @"StackOverflowManagerError";
 NSString *StackOverflowManagerSearchFailedError = @"StackOverflowManagerSearchFailedError";
@@ -28,9 +29,28 @@ NSString *StackOverflowManagerSearchFailedError = @"StackOverflowManagerSearchFa
     [self.communicator searchForQuestionsForTag:[topic tag]];
 }
 
+- (void)fetchBodyForQuestion:(Question *)question
+{
+    self.questionNeedingBody = question;
+    [self.communicator downloadInformationForQuestionWithID:question.questionID];
+}
+
 - (void)searchingForQuestionsFailedWithError:(NSError *)error
 {
     [self tellDelegateAboutQuestionSearchError:error];
+}
+
+- (void)fetchingQuestionBodyFailedWithError:(NSError *)error
+{
+    NSDictionary *errorInfo = nil;
+    if (error)
+    {
+        errorInfo = [NSDictionary dictionaryWithObject: error forKey: NSUnderlyingErrorKey];
+    }
+    NSError *reportableError = [NSError errorWithDomain: StackOverflowManagerError
+                                                   code: StackOverflowManagerErrorQuestionBodyFetchCode
+                                               userInfo:errorInfo];
+    [self.delegate fetchingQuestionBodyFailedWithError: reportableError];
 }
 
 - (void)receivedQuestionsJSON:(NSString *)objectNotation
@@ -45,6 +65,11 @@ NSString *StackOverflowManagerSearchFailedError = @"StackOverflowManagerSearchFa
     {
         [self.delegate didReceiveQuestions:questions];
     }
+}
+
+- (void)receivedQuestionBodyJSON:(NSString *)objectNotation
+{
+    [self.questionBuilder fillInDetailsForQuestion:self.questionNeedingBody fromJSON:objectNotation];
 }
 
 - (void) tellDelegateAboutQuestionSearchError:(NSError *)error

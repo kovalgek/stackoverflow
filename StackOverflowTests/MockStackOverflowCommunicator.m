@@ -11,6 +11,7 @@
 @interface MockStackOverflowCommunicator()
 {
     BOOL wasAskedToFetchQuestions;
+    BOOL wasAskedToFetchBody;
 }
 @end
 
@@ -24,6 +25,16 @@
 - (BOOL)wasAskedToFetchQuestions
 {
     return wasAskedToFetchQuestions;
+}
+
+- (void)downloadInformationForQuestionWithID:(NSInteger)identifier
+{
+    wasAskedToFetchBody = YES;
+}
+
+- (BOOL)wasAskedToFetchBody
+{
+    return wasAskedToFetchBody;
 }
 
 @end
