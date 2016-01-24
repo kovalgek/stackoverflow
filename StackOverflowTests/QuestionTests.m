@@ -42,11 +42,9 @@
     highScore.score = 4;
     [question addAnswer:highScore];
     
-    
     lowScore = [[Answer alloc] init];
     lowScore.score = 1;
     [question addAnswer:lowScore];
-    
 }
 
 - (void)tearDown

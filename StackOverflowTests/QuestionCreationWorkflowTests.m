@@ -105,6 +105,8 @@
     mgr.questionBuilder = nil;
 }
 
+// цепочка билдер - менеджер - делегат
+// проверим что при ошибке в билдере менеджер сообщает это делегату
 - (void)testDelegateNotifiedOfErrorWhenQuestionBuilderFails
 {
     questionBuilder.arrayToReturn = nil;
@@ -114,6 +116,7 @@
     mgr.questionBuilder = nil;
 }
 
+// наоборот, если билд возвращает массив,то у делегата не должно быть ошибок
 - (void)testDelegateNotToldAboutErrorWhenQuestionsReceived
 {
     questionBuilder.arrayToReturn = questionArray;
@@ -121,6 +124,7 @@
     XCTAssertNil([delegate fetchError], @"No error should be received on success");
 }
 
+//наоборот, если билд возвращает массив,то у делегата должен быть этот массив
 - (void)testDelegateReceivesTheQuestionsDiscoveredByManager
 {
     questionBuilder.arrayToReturn = questionArray;
@@ -128,6 +132,7 @@
     XCTAssertEqualObjects([delegate receivedQuestions], questionArray, @"The manager should have sent its questions to the delegate");
 }
 
+// пустой массив допустим
 - (void)testEmptyArrayIsPassedToDelegate
 {
     questionBuilder.arrayToReturn = [NSArray array];
@@ -140,7 +145,6 @@
     [mgr fetchBodyForQuestion: questionToFetch];
     XCTAssertTrue([communicator wasAskedToFetchBody], @"The communicator should need to retrieve data for the question body");
 }
-
 
 - (void)testDelegateNotifiedOfFailureToFetchQuestion
 {

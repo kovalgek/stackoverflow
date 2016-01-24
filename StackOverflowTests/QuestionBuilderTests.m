@@ -134,5 +134,4 @@ static NSString *emptyQuestionsArray = @"{ \"items\": [] }";
     XCTAssertNoThrow([questionBuilder fillInDetailsForQuestion: question fromJSON: emptyQuestionsArray], @"Don't throw if no questions are found");
 }
 
-//https://api.stackexchange.com/2.2/questions/4010?site=stackapps&filter=withbody
 @end
